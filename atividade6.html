@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soma matriz</title>
+</head>
+
+<body>
+    <script>
+       
+        function calcularFatorial(numero) {
+            if (numero === 0 || numero === 1) {
+                return 1;
+            } else {
+                return numero * calcularFatorial(numero - 1);
+            }
+        }
+
+        function main() {
+
+            let numero = parseInt(prompt("Digite um número para calcular o fatorial:"));
+
+
+            if (isNaN(numero)) {
+                alert("Por favor, insira um número válido.");
+                return;
+            }
+
+
+            let fatorial = calcularFatorial(numero);
+
+            
+            document.write("O fatorial de", numero , "é",  fatorial);
+        }
+
+        main();
+    </script>
+
+</body>
+
+</html>

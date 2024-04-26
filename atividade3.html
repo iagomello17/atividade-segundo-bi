@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de um vetor</title>
+</head>
+<body>
+    <script> 
+        
+        var vetor = [10, 8, 6, 7, 9];
+
+        
+        function calcularMedia(vetor) {
+            var soma = 0;
+            for (var i = 0; i < vetor.length; i++) {
+                soma += vetor[i];
+            }
+            return soma / vetor.length;
+        }
+
+        
+        var media = calcularMedia(vetor);
+        document.write("A média dos números no vetor é: " + media);
+    </script>
+</body>
+</html>
